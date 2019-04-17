@@ -1,7 +1,7 @@
 import os, sys, requests, json
 
 from flask import Flask, session, render_template, request, flash, redirect, jsonify
-from flask.ext.session import Session
+from flask_session import Session
 from sqlalchemy import create_engine, Table, Column, Integer, String, Sequence, MetaData
 from sqlalchemy.orm import scoped_session, sessionmaker
 
