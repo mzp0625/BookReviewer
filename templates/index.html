@@ -1,0 +1,19 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Book app
+{% endblock %}
+
+{% block body %}
+
+  <h3>Welcome to Book Reviewer!</h3>
+  <form action="/search" methods = "get">
+      <div class="form-group">
+          <p class="form-text"><i>Here you can read and write reviews of over 5000 books</i></p>
+          <input type="text" class="form-control" name="book" autofocus aria-describedby="bookHelp" placeholder="ISBN, Title or Author" required/>
+          <small id="bookHelp" class="form-text text-muted">Example: 0375508325, Cosmos or Carl Sagan</small>
+      </div>
+      <button class="btn btn-primary" type="submit">Search</button>
+  </form>
+{% endblock %}

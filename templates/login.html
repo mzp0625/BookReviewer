@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title%}
+    Login
+{% endblock%}
+
+{% block body %}
+
+    <h3>Log in</h3>
+    <form action="/login" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" required/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password" required/>
+        </div>
+        <p class="NoPass"><a href="register">Do not have an account yet? Register here!</a></p>
+
+        <button type="submit" value = "login" class = "btn btn-primary">Log In</button>
+    </form>
+
+{% endblock %}
